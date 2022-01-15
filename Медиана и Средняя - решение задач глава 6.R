@@ -17,9 +17,9 @@ mean_vs_median  <- function() {
     mean <- mean(sample) # mean
     mediana_vector <- c(mediana_vector, mediana)
     mean_vector <- c(mean_vector, mean)
-    merror_median <- round(mean((lambda-mediana_vector)**2), 3) # meansquared error for median
-    merror_mean <- round(mean((lambda-mean_vector)**2), 3) # meansquared error for mean
   } 
+  merror_median <- round(mean((lambda-mediana_vector)**2), 3) # meansquared error for median
+  merror_mean <- round(mean((lambda-mean_vector)**2), 3) # meansquared error for mean
   sd_mean <- round(sd(mean_vector), 3) ##5. Calculate the standard deviation for the R values of obtained mean and median.
   sd_median <- round(sd(mediana_vector), 3)
   values_vector <- c(sd_mean, sd_median, merror_mean, merror_median)
